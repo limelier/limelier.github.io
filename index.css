@@ -1,0 +1,84 @@
+body {
+    font-family: monospace;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+
+    background-color: rgb(10%, 10%, 15%);
+    color: rgb(80%, 80%, 70%);
+}
+
+main {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header, section {
+    display: block;
+    padding: 2ch 4ch;
+    margin: 2vh;
+}
+
+header {
+    background-color: rgba(100%, 100%, 100%, 0.02);
+    padding: 5vh 0;
+}
+
+header h1, p {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 60pt;
+    font-weight: lighter;
+    margin: 0 0 10px;
+}
+
+header p {
+    opacity: 50%;
+    font-size: 18pt;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+section a {
+    font-size: 20pt;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+section a:hover {
+    color: yellowgreen;
+}
+
+@media screen and (max-width: 1000px){
+    header h1 {
+        font-size: 40pt;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header h1 {
+        font-size: 20pt;
+    }
+
+    header p {
+        font-size: 10pt;
+    }
+
+    section a {
+        font-size: 10pt;
+    }
+}
